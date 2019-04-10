@@ -3,10 +3,16 @@
 *{
   box-sizing: border-box;
 }
-
 body{
   background-image: url(../image/bg-body.png);
   font-family: Raleway, sans-serif;
+}
+.container{
+  width: 100vw;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .social{
   display: flex;
@@ -21,4 +27,23 @@ body{
 
 .redondo{
   border-radius: 50%;
+}
+
+.tarjeta{
+  width: 98%;
+  margin: 2%;
+}
+
+@media (min-width:600px) {
+  body{
+    font-size: 14px;
+  }
+  .container{
+    width:100%;
+    max-width: 1200px; /*porque todos los margenes los vamos a hacer desde los elementos*/
+  }
+  .tarjeta{
+    width: 48.34%;
+    float: left;
+  }
 }
